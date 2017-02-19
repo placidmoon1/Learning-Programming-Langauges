@@ -1,4 +1,4 @@
-# Conditional Statements in Java
+# Chapter 2: Conditional Statements in Java
 
 ### if loop
 
