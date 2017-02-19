@@ -1,7 +1,7 @@
 # Learning new programming langauges 
 
-## Timeframe & Type of learning
-1. `HTML & CSS`: May '16 
-2. `MatLab`: August '16 ~ 
-3. `Java`: January '17 ~ 
-4. `SQL`: Feburary '17 ~ 
+## When did I started learning programming languages?
+1. HTML & CSS (May 2016)
+2. MatLab (August 2016)
+3. Java: (January 2017)
+4. SQL: (Feburary 2017)
