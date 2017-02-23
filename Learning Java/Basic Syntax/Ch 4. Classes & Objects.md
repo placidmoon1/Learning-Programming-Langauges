@@ -10,7 +10,7 @@ For instance, Class: Human being; Object: Man, Woman; Attribute: name, height; B
 ### Method
 Methods define **behavior**. More specifically, a method is a collection of statements that are grouped together to perform an operation.  A method can be called multiple times. A method can also have parameters that takes in some data. A method can also have a **return** keyword to return a value when called. The type of the return value is defined in the method definition. If there is no return value, the type is void. 
 
-``Java
+``java
 class MyClass {
   static void sayHello(String name) {
     System.out.println("Hello World! " + name);
