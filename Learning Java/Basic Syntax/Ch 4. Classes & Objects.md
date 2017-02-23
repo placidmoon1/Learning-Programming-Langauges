@@ -29,5 +29,7 @@ class MyClass {
 //Hello World! David
 //The sum is 7. 
 ```
+### Objects 
+Objects can be created by Classname Objectname = new Classname(). For instance, 
 
 
