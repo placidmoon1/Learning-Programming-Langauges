@@ -30,6 +30,26 @@ class MyClass {
 //The sum is 7. 
 ```
 ### Objects 
-Objects can be created by Classname Objectname = new Classname(). For instance, 
+Objects can be created by Classname Objectname = new Classname(). For instance, Animal dog = new Animal(); To acess a method, you use the dot method; for instance dog.bark() references the bark() method onto the "dog" object. 
+
+i.e. 
+```java
+// main class that the object will reference 
+public class Animal {
+  void bark() {
+    System.out.println("Woof-Woof");
+  }
+}
+
+////////////////////////////////////////////////
+
+//creating an object 
+class MyClass {
+  public static void main(String[] args) {
+    Animal dog = new Animal();
+    dog.bark();
+  }
+}
+// Outputs "Woof-Woof"
 
 
