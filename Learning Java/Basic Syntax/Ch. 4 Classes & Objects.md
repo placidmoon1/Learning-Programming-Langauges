@@ -56,10 +56,10 @@ class MyClass {
 ### Access Modifiers
 
 1. In Java, there are four types of modifers: 
-⋅⋅* Public: Accessable from any other class. 
-⋅⋅* Protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass 
-⋅⋅* Default: A variable or method declared with no access control modifier is available to any other class in the same package.
-⋅⋅* Private: Accessible only within the declared class itself.
+2.  Public: Accessable from any other class. 
+3. Protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass 
+3. Default: A variable or method declared with no access control modifier is available to any other class in the same package.
+4. Private: Accessible only within the declared class itself.
 
 ### Getters & Setters 
 
