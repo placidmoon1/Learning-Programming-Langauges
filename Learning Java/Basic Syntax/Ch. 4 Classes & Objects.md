@@ -51,5 +51,68 @@ class MyClass {
   }
 }
 // Outputs "Woof-Woof"
+```
+
+### Access Modifiers
+
+0. In Java, there are four types of modifers: 
+1. Public: Accessable from any other class. 
+2. Protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass 
+3. Default: A variable or method declared with no access control modifier is available to any other class in the same package.
+4. Private: Accessible only within the declared class itself.
+
+### Getters & Setters 
+
+Getter methods and Setter methods are primarially used to protect data when creating a class. For each variable, getter start with a get followed by the variable name and setter start with a set follow by the variable name. The keyword "this" is used to refer to the current object. 
+
+```java
+public class Vehicle {
+  private String color;
+
+  // Getter
+  public String getColor() {
+    return color;
+  }
+
+ // Setter
+  public void setColor(String c) {
+    this.color = c;
+  }
+}
+
+public static void main(String[ ] args) {
+  Vehicle v1 = new Vehicle();
+  v1.setColor("Red");
+  System.out.println(v1.getColor());
+}
+
+//Outputs "Red"
+```
+
+### Constructors 
+
+Constructors are special methods that are invoked when an object is created and are used to initialize them. Therefore, a constructor can be used to provide initial values for object attributes. A construct **must** be same as its class name and **must** have no explicit return value. A constuctor can also take parameters to initalize attributes. Example of a constructor is: 
+```java
+public class Vehicle {
+  private String color;
+  Vehicle() {
+    this.setColor("Red");
+  }
+  Vehicle(String c) {
+    this.setColor(c);
+  }
+  // Setter
+  public void setColor(String c) {
+    this.color = c;
+  }
+}
+//////////////////////////////////////
+//if initalized w/out a parameter, color will be "Red"
+Vehicle v1 = new Vehicle();
+
+//color will be "Green"
+Vehicle v2 = new Vehicle("Green"); 
+```
 
 
+ 
