@@ -53,9 +53,7 @@ class MyClass {
 // Outputs "Woof-Woof"
 ```
 
-### Access Modifiers
-
-1. In Java, there are four types of modifers: 
+### Access Modifiers (In Java, there are four types of modifers)
 2.  Public: Accessable from any other class. 
 3. Protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass 
 3. Default: A variable or method declared with no access control modifier is available to any other class in the same package.
