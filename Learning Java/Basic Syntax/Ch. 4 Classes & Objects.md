@@ -3,7 +3,7 @@
 ### What is OOP (Object Oriented Programming)?
 Java's fundamental building blocks are objects, and each object is an unique identity. Each object has three dimensions: **identity**,  **attribute** that describes the object's current state, and **behavior** that's specific to the object's type. 
 
-A **class** describes what the object will be, but is separate from the object itself. 
+A **class** describes what the object will be, but is separate from the object itself. Basically, a class is a template for objects. It defines the properties of objects and provides constructors for creating objects and methods for manipulating them.
 
 For instance, Class: Human being; Object: Man, Woman; Attribute: name, height; Behavior: walk, eat.
 
@@ -30,7 +30,7 @@ class MyClass {
 //The sum is 7. 
 ```
 ### Objects 
-Objects can be created by Classname Objectname = new Classname(). For instance, Animal dog = new Animal(); To acess a method, you use the dot method; for instance dog.bark() references the bark() method onto the "dog" object. 
+An object is an instance of a class. You use the new operator to create an object. For instance, an object can be created by Classname Objectname = new Classname(). Or, Animal dog = new Animal(). To acess a method, you use the dot operator (.); for instance dog.bark() references the bark() method onto the "dog" object. 
 
 i.e. 
 ```java
@@ -126,6 +126,35 @@ Math.pow() //takes two parameters and returns the first parameter raised to the 
 ```
 
 ### Static keyword
+A static variable is a variable shared by all instances of the same class. A static method is a method that can be invoked without using instances. 
 
+ ```java
+ public class Student{
+   public static int numStu=0;
+   Student(){
+       numStu++;
+   }
+   Student(int num){
+       numStu += num;
+   }
+}
 
- 
+public class MyClass {
+    public static void main(String[ ] args) {
+       Student Kevin = new Student();
+       Student Matt = new Student();
+       Student couple = new Student(2);
+    System.out.println(Student.numStu);
+    }
+}
+```
+### Final keyword 
+The final keyword is used to mark a variable constant, so that it can be assigned only once.
+
+```java
+class WhatIsPi {
+  public static final double PI = 3.14; 
+  public static void main(String[] args) {
+    System.out.println(PI);
+  }
+}
