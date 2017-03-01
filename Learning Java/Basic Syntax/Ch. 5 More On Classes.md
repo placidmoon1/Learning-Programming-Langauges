@@ -62,3 +62,27 @@ Method Overriding (also known as Method Polymorphism) is basically a subclass de
 4. If a method cannot be inherited, it cannot be overridden
 5. Constructors cannot be overridden
 
+When methods have the same name, but different parameters, you are overloading the method (also known as compile-time polymorphism). 
+For instance, there exists 
+```java
+int min(int a, int b) {
+  if(a < b) {
+    return a;
+  }
+  else {
+    return b;
+  }
+}
+```
+However, when I want this method to also accept double parameters, I can override this method by 
+```java
+double min(double a, double b) {
+  if(a < b) {
+    return a;
+  }
+  else {
+    return b;
+  }
+}
+```
+**IMPORTANT**: Overloading is not inheritance-based whereas overrriding is inheritance-based. 
