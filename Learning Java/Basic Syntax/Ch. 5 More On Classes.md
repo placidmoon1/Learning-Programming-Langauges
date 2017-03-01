@@ -62,7 +62,19 @@ Method Overriding (also known as Method Polymorphism) is basically a subclass de
 4. If a method cannot be inherited, it cannot be overridden
 5. Constructors cannot be overridden
 
-When methods have the same name, but different parameters, you are overloading the method (also known as compile-time polymorphism). 
+```java
+class Voice {
+    public void makeSound() {
+        System.out.println("Ahhhhhhhh");
+    }
+}
+class Scream extends Voice {
+    public void makeSound() {
+        System.out.println("AHHHHHHHHHHH!");
+    }
+}
+```
+When methods have the same name, but different parameters, you are **overloading** the method (also known as compile-time polymorphism). 
 For instance, there exists 
 ```java
 int min(int a, int b) {
@@ -86,3 +98,13 @@ double min(double a, double b) {
 }
 ```
 **IMPORTANT**: Overloading is not inheritance-based whereas overrriding is inheritance-based. 
+
+### Abstract Class 
+Data abstraction provides the outside world with only essential information, in a process of representing essential features without including implementation details. A good real-world example is a book. When you hear the term book, you don't know the exact specifics, such as the page count, the color, or the size, but you understand the idea, or abstraction, of a book. 
+
+An abstract class has three pecularities: 
+1. It cannot be instantiated (i.e. an object of an abstract class cannot be created)
+2. Abstract methods must be in abstract classes. 
+3. To use an abstract class, you need to inherit the class into another class using *extends*. 
+
+
