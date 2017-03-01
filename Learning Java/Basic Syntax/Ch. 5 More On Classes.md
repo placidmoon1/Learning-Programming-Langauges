@@ -102,7 +102,7 @@ double min(double a, double b) {
 ### Abstract Class 
 Data abstraction provides the outside world with only essential information, in a process of representing essential features without including implementation details. A good real-world example is a book. When you hear the term book, you don't know the exact specifics, such as the page count, the color, or the size, but you understand the idea, or abstraction, of a book. 
 
-An abstract class has three pecularities: 
+#### An abstract class has three pecularities: 
 1. It cannot be instantiated (i.e. an object of an abstract class cannot be created)
 2. Abstract methods must be in abstract classes. 
 3. To use an abstract class, you need to inherit the class into another class using *extends*. 
