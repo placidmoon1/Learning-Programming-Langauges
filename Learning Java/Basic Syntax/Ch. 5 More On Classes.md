@@ -56,9 +56,9 @@ smart.GPA()
 Method Overriding (also known as Method Polymorphism) is basically a subclass defining a behavior that's specific to the subclass type, meaning that a subclass can implement a parent class method based on its requirement.
 
 #### Rules for Method Overriding:
-1) Should have the same return type and arguments
-2) The access level cannot be more restrictive than the overridden method's access level (Example: If the superclass method is declared public, the overriding method in the sub class can be neither private nor protected)
-3) A method declared final or static cannot be overridden
-4) If a method cannot be inherited, it cannot be overridden
-5) Constructors cannot be overridden
+1. Should have the same return type and arguments
+2. The access level cannot be more restrictive than the overridden method's access level (Example: If the superclass method is declared public, the overriding method in the sub class can be neither private nor protected)
+3. A method declared final or static cannot be overridden
+4. If a method cannot be inherited, it cannot be overridden
+5. Constructors cannot be overridden
 
