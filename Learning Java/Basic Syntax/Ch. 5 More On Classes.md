@@ -62,5 +62,3 @@ Method Overriding (also known as Method Polymorphism) is basically a subclass de
 4) If a method cannot be inherited, it cannot be overridden
 5) Constructors cannot be overridden
 
-### 
-
