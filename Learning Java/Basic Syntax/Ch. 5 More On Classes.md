@@ -105,6 +105,6 @@ Data abstraction provides the outside world with only essential information, in 
 #### An abstract class has three pecularities: 
 1. It cannot be instantiated (i.e. an object of an abstract class cannot be created)
 2. Abstract methods must be in abstract classes. 
-3. To use an abstract class, you need to inherit the class into another class using *extends*. 
+3. To use an abstract class, you need to inherit the class into another class using the keyword *extends*. 
 
 
