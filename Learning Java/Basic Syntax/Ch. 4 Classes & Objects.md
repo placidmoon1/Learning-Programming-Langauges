@@ -112,5 +112,20 @@ Vehicle v1 = new Vehicle();
 Vehicle v2 = new Vehicle("Green"); 
 ```
 
+### Math class
+The JDK (Java Development Kit) defines a number of useful classes, one of them being the Math class, which provides predefined methods for mathematical operations.
+Example of methods corresponding to the Math class are: 
+```java
+Math.abs() //gives absolute values
+Math.ceil() //rounds a floating point value up to the nearest integer value
+Math.floor() //rounds a floating point value down to the nearest integer value.
+Math.max() // returns the largest of its parameters (param can be more than 2).
+Math.min() /returns the smallest parameter
+Math.pow() //takes two parameters and returns the first parameter raised to the power of the second parameter.
+// and number of other methods such as sin(), cos(), sqrt(), and others exist in the Math class. 
+```
+
+### Static keyword
+
 
  
