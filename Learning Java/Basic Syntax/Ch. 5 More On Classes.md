@@ -54,7 +54,8 @@ smart.GPA()
 ```
 ### Override vs. Overload 
 Method Overriding (also known as Method Polymorphism) is basically a subclass defining a behavior that's specific to the subclass type, meaning that a subclass can implement a parent class method based on its requirement.
-Rules for Method Overriding:
+
+#### Rules for Method Overriding:
 
 1) Should have the same return type and arguments
 2) The access level cannot be more restrictive than the overridden method's access level (Example: If the superclass method is declared public, the overriding method in the sub class can be neither private nor protected)
