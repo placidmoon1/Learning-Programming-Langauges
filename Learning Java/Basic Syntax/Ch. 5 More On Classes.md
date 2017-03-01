@@ -17,7 +17,7 @@ class StudentGrades {
 Inheritance is the process that enables one class to acquire the properties (methods and variables) of another. The class inheriting the properties of another is the subclass (also called derived class, or child class); the class whose properties are inherited is the superclass (base class, or parent class). To inherit from the class, you need to use the **extend** keyword. Also, when one class inherits from another class, it inerhits all **non-private** (i.e. use the **protected** access modifier) variables and methods. Constructors are not member methods, and so are **not inherited** by subclasses. **However**, the constructor of the superclass is **called** when the subclass is instantiated. 
 
 ```java
-class Java extend ComputerLanguage {
+class Java extends ComputerLanguage {
   //some code
 }
 ```
@@ -107,4 +107,22 @@ Data abstraction provides the outside world with only essential information, in 
 2. Abstract methods must be in abstract classes. 
 3. To use an abstract class, you need to inherit the class into another class using the keyword *extends*. 
 
+### Interface
+An interface is a completely abstract class that contains only abstract methods (i.e. no implementation of methods). An interface is a guarentee that abstract methods present will have public interfaces. It is defined using the **interface** class and can **only** contain static final variables other than the abstract methods. Interfaces cannot contain construtors but a class can implement multiple interfaces (unlike extension). Interface and its associate methods are *implicitly* abstract; therefore, they don't require the *abstract* keyword. You use the  *implements* keyword to use interface in your class. All methods of the interface is **overrided** when implemented.
 
+Best pratice when using an interface and abstract class is making the abstract class implement the interface and all other classes inherit the abstract class. 
+```java
+interface Animal {
+  public void eat();
+  public void makeSound();
+}
+
+class Cat implements Animal {
+  public void makeSound() {
+    System.out.println("Meow");
+  }
+  public void eat() {
+    System.out.println("omnomnom");
+  }
+}
+```
