@@ -33,11 +33,11 @@ Code Snippet #2 (Continue):
 outer:
  for (int i = 1; i < 10; i++) {
  inner:
-  for (int j = 1; j < 10; j++) {
-    if (i * j > 50)
-      continue outer;
-    System.out.println(i * j);
-  }
+    for (int j = 1; j < 10; j++) {
+     if (i * j > 50)
+        continue outer;
+     System.out.println(i * j);
+    }
  } 
  ```
  
