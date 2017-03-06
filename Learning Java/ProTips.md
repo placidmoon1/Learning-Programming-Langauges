@@ -1,6 +1,6 @@
 # Java Pro Tips & Interesting Quirks 
 
-### & vs && and | vs || 
+### Single vs Double Operators
 
 Java provides the single amperand (&) and vertical bar (|) for an unconditional evalution of both operands. Therefore, **&** is referred as the *unconditional AND* operator, and **|** is referred as the *unconditional OR* operator. In some rare siutations when needed, one can use the single **&** or **|** to guarantee that the right-hand operand is evaluated regardless of whether the left-hand operand is **true** or **false**. 
 
