@@ -8,3 +8,37 @@ On the other hand, the double amperand (&&) and vertical bar (||) are *short cir
 
 > If possible, avoid using the **&** and **|** operators; the benefits of such opeartors are marginal. Furthermore, if one uses the single amerpand (&) and if the left operand returns false, it would result into a runtime error. 
 
+### Breaking (with labels) 
+
+Every statement in Java can have an optional label as an indentifier, normaally associated with loops. One can use a **break** statement with a label to break out of the labeled loop, and a **continue** statement with a label to break out of the current iteration of the labeled loop. 
+
+Code Snippet #1 (Break):
+
+```java
+outer:
+ for (int i = 1; i < 10; i++) {
+ inner:
+    for (int j = 1; j < 10; j++) {
+      if (i * j > 100)
+        break outer;
+      System.out.println(i * j);
+     }
+  }
+// loop ends when i * j > 100.
+```
+
+Code Snippet #2 (Continue): 
+
+```java 
+outer:
+ for (int i = 1; i < 10; i++) {
+ inner:
+  for (int j = 1; j < 10; j++) {
+    if (i * j > 50)
+      continue outer;
+    System.out.println(i * j);
+  }
+ } 
+ ```
+ 
+ 
