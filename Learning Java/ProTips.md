@@ -39,6 +39,10 @@ outer:
      System.out.println(i * j);
     }
  } 
+ /** The following continue statement breaks out of the inner
+* loop if (i * j > 50) and starts a new iteration of the outer
+*/ loop if i < 10 is true after i is incremented by 1. 
+
  ```
  
  
