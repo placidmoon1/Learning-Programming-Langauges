@@ -5,6 +5,7 @@
 1. [Single vs Double Operators](#single-vs-double-operators)
 2. [Breaking (with labels)](#breaking-with-labels)
 3. [Java types and default values](#java-types-and-default-values)
+4. [Lists of Exceptions](#lists-of-exceptions)
 
 ### Single vs Double Operators
 
@@ -56,6 +57,8 @@ outer:
  
 The compiler does not assign default values to local variables (i.e. variables defined in a body of a method). Therefore, one must initialize variables beforehand to avoid compile-time error for accessing an uninitialized local variables. 
  
+ Java also has the Object type (i.e. String) defaulted as null (null is a *literal*).
  
- Java also has the Object type (i.e. String) defaulted as null. 
+ ### Lists of Exceptions 
 
+1. NullPointerExcpetion: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
