@@ -61,4 +61,4 @@ The compiler does not assign default values to local variables (i.e. variables d
  
 ### Lists of Exceptions 
 
-1. NullPointerExcpetion: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
+1. **NullPointerExcpetion**: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
