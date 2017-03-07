@@ -1,2 +1,2 @@
-#CheckPoint Question for Chapeter 11: Inheritance and Polymorphism
+#CheckPoint Q. for Ch. 11: Inheritance and Polymorphism
 
