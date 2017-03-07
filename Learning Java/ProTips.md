@@ -4,7 +4,7 @@
 
 1. [Single vs Double Operators](#single-vs-double-operators)
 2. [Breaking (with labels)](#breaking-with-labels)
-3. [Java types and default values](#Java types and default values)
+3. [Java types and default values](#java-types-and-default-values)
 
 ### Single vs Double Operators
 
