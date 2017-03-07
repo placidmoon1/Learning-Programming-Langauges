@@ -66,7 +66,7 @@ The compiler does not assign default values to local variables (i.e. variables d
 
 ### The SOLID Principle
 
-The SOLID design principles denotes the five fundamental principles that every object-oriented language should abide.
+The SOLID design principles denotes the five fundamental principles that every object-oriented language based code should abide.
 
 - **S**ingle Responsibility Principle (SRP): 
 
