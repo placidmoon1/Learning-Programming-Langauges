@@ -59,6 +59,6 @@ The compiler does not assign default values to local variables (i.e. variables d
  
  Java also has the Object type (i.e. String) defaulted as null (null is a *literal*).
  
- ### Lists of Exceptions 
+### Lists of Exceptions 
 
 1. NullPointerExcpetion: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
