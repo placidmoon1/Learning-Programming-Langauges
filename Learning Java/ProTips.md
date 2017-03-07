@@ -6,6 +6,7 @@
 2. [Breaking (with labels)](#breaking-with-labels)
 3. [Java types and default values](#java-types-and-default-values)
 4. [Lists of Exceptions](#lists-of-exceptions)
+5. [The SOLID Principle](#the-solid-principle)
 
 ### Single vs Double Operators
 
@@ -62,3 +63,24 @@ The compiler does not assign default values to local variables (i.e. variables d
 ### Lists of Exceptions 
 
 1. **NullPointerExcpetion**: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
+
+### The SOLID Principle
+
+The SOLID design principles denotes the five fundamental principles that every object-oriented language should abide.
+
+- **S**ingle Responsibility Principle (SRP): 
+
+The principle that denotes that a class should have only a single responsibility. Essentially, this prinicple suggests the use of many smaller classes, each with a very specific purpose over the use of larger, broader classes to make the code more modular, reusable, and extensible.
+
+- **O**pen/Closed Principle (OCP): 
+
+The principle that denotes thtat a class should be **closed** for modification but **open** for extension. When one wants to add a new feature to the class, one should subclass the existing class. 
+
+- **L**iskov Substitution Principle (LSP): 
+
+The principle that denotes anywhere an instance of a super class is expected, an instance of one of its subclasses should be able to be substituted. The subclass must not broaden the preconditions or relax the postconditions when the subclass overrides the superclass. 
+
+- **I**nterface Segregation Principle (ISP): 
+
+- **D**ependency Injection Principle (DIP): 
+
