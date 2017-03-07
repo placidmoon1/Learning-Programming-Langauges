@@ -1,2 +1,2 @@
-#Checkpoint Questions for Chapter 9: Objects and Classes (Liang, 10th ed.) 
+#Checkpoint Questions for Ch. 9: Objects and Classes 
 
