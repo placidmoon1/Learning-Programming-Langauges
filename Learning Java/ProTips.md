@@ -44,5 +44,11 @@ outer:
 // loop if i < 10 is true after i is incremented by 1. 
 
  ```
+ ### Java types and default values
  
+ Java has 8 primitive types used to represent simple data types that represents integers, real numbers, characters, and Boolean types. Those types are: boolean (default: `false`), byte (default: `0`), char (default: `\u0000`), short (default: `0`), int (default: `0`), long (default: `0L`), float (default: `0.0f`) and double (deefault: 0). Default values are default values for instantiated variables when no value is assigned. Primitive values do not need the **new** keyword to be initialized because they are initalized as literals (i.e. not objects created from a class; rather, a source code representation of a fixed value).  
+ 
+ Java also has the Object type (i.e. String) defaulted as null. 
+ 
+ However, the compiler does not assign default values to local variables (i.e. variables defined in a body of a method). Therefore, one must initialize variables beforehand to avoid compile-time error for accessing an uninitialized local variables. 
  
