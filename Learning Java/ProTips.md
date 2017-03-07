@@ -2,9 +2,9 @@
 
 ## Table of Contents: 
 
-1. [Single vs Double Operators](### Single vs Double Operators)
-2. [Breaking (with labels)](### Breaking (with labels) )
-3. [Java types and default values](### Java types and default values)
+1. [Single vs Double Operators](#Single vs Double Operators)
+2. [Breaking (with labels)](#Breaking (with labels) )
+3. [Java types and default values](#Java types and default values)
 
 ### Single vs Double Operators
 
