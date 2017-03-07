@@ -50,3 +50,4 @@ NullPointerException is an excpetion that occurs when a null reference variable 
 - Is an array an object or a primitive type value? Can an array contain elements of an object type? Describe the default value for the elements of an array.
 
 An array is an object that is created through the *new* keyword. An array can contain elements of an object type. The default value for the elements of an array is 0 for numeric, false for boolean, '\u0000' for char, and null for object element type.
+
