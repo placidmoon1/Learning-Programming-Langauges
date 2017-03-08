@@ -7,7 +7,7 @@
 3. [Java types and default values](#java-types-and-default-values)
 4. [Lists of Exceptions](#lists-of-exceptions)
 5. [The SOLID Principle](#the-solid-principle)
-6. [Do subclasses inherit private fields?](#do-subclassses-inherit-private-fields)
+6. [Do subclasses inherit private fields?](#do-subclasses-inherit-private-fields)
 
 ### Single vs Double Operators
 
