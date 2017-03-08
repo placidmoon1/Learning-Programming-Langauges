@@ -94,9 +94,17 @@ Per [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1
 
 ### .equals() method vs == 
 
-In the most simplest sense, .equals() method determines whether the two comparing objects are **logically same** and == operator compares the value of **two object references** to see whether they refer to the **same String instance (memory address)**. The .equals() method can be overridden by the coder to allow objects to be compared by any trait they choose (ex. comparing people by their name instance variable).
+In the most simplest sense, .equals() method, located in java.lang.Object, determines whether the two comparing objects' **value** inside String instances are **logically same** and == operator compares the value of **two object references** to see whether they refer to the **same String instance (memory address)**. The .equals() method can be overridden by the coder to allow objects to be compared by any trait they choose (ex. comparing people by their name instance variable).
 
 Use the == operator to determine whether an object has the same memory address as an another object (i.e. to determine whether the objects are **aliases** of each other). 
 
+To override the inherited .equals() method, these concepts must be true: 
 
+1. Reflexive: Any object returns true for this.equals(this) comparing itself with the .equals() method. 
+2. Symmetric: If a.equals(b) is true then b.equals(a) must be true. 
+3. Transitive: If a.equals(b) and b.equals(c) are true, then a.equals(c) must be true. 
+4. Consistent: If a and b do not change between invocations of a.equals(b) or b.equals(a) then each invocation must return the same result
+5. Null: a.equals(null) must always return false
+6. The compared object must have the same type as the object to return true. (i.e. the a.equals(b) when int a is 5 and double b is 5.0, it returns false). 
+7. Hashcode. 
 
