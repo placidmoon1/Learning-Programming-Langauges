@@ -9,6 +9,7 @@
 5. [The SOLID Principle](#the-solid-principle)
 6. [Do subclasses inherit private fields?](#do-subclasses-inherit-private-fields)
 7. [.equals() method vs. ==](#equals-method-vs-)
+8. [Covariant Method Overriding!](#covariant-method-overriding)
 
 ### Single vs Double Operators
 
@@ -108,3 +109,6 @@ To override the inherited .equals() method, these concepts must be true:
 6. The compared object must have the same type as the object to return true. (i.e. the a.equals(b) when int a is 5 and double b is 5.0, it returns false). 
 7. Hashcode. 
 
+### Covariant Method Overriding! 
+
+First introduced in JDK Version 5, covariant method overriding allows to override methods if the return type of the subclass is the subclass type of the superclass' method whose return type is Non-Primitive.
