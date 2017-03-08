@@ -89,4 +89,6 @@ The principle that denotes anywhere an instance of a super class is expected, an
 
 Based on this Quora Question [link](http://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields) and my question on the extent of applicability of private data fields: 
 
-Per [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1.1) (Java Language Specification): Members of a class that are declared private **are not inherited** by subclasses of that class. Only members of a class that are declared protected or public are inherited by subclasses declared in a package other than the one in which the class is declared. However, the **objects** of the subclasses contain private fields (but they cannot be accessed unless through public getter methods). 
+Per [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1.1) (Java Language Specification): Members of a class that are declared private **are not inherited** by subclasses of that class. Only members of a class that are declared protected or public are inherited by subclasses declared in a package other than the one in which the class is declared. However, the **objects** of the subclasses contain private fields (but they cannot be accessed unless through public getter methods and mutated unless through public setter methods). 
+
+### .equals() method vs == 
