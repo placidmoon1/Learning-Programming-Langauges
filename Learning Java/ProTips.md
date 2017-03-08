@@ -7,6 +7,7 @@
 3. [Java types and default values](#java-types-and-default-values)
 4. [Lists of Exceptions](#lists-of-exceptions)
 5. [The SOLID Principle](#the-solid-principle)
+6. [Do subclasses inherit private fields?](#do-subclassses-inherit-private-fields)
 
 ### Single vs Double Operators
 
@@ -84,3 +85,6 @@ The principle that denotes anywhere an instance of a super class is expected, an
 
 - **D**ependency Injection Principle (DIP): 
 
+### Do Subclasses inherit private fields? 
+
+Based on this Quora Question [link](http://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields) and 
