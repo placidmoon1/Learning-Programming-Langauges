@@ -94,5 +94,9 @@ Per [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1
 
 ### .equals() method vs == 
 
-In the most simplest sense, .equals() method determines whether the two comparing objects are **logically same** and == operator compares the value of **two object references** to see whether they refer to the **same String instance**. The .equals() method can be overridden by the coder to allow objects to be compared by any trait they choose (ex. comparing people by their name instance variable).
+In the most simplest sense, .equals() method determines whether the two comparing objects are **logically same** and == operator compares the value of **two object references** to see whether they refer to the **same String instance (memory address)**. The .equals() method can be overridden by the coder to allow objects to be compared by any trait they choose (ex. comparing people by their name instance variable).
+
+Use the == operator to determine whether an object has the same memory address as an another object (i.e. to determine whether the objects are **aliases** of each other). 
+
+
 
