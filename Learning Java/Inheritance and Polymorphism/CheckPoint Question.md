@@ -37,10 +37,13 @@ Though there is no explicit no-args constructor in class A, A defines a construc
 A subclass can implicitly invoke its superclass's no-args constrcutor when no **super(someType someParam)** is explicitly invoked. If a subclass wants to invoke its superclass's constructor with a certain param, it uses the *super()* keyword. 
 
 - True or false? When invoking a constructor from a subclass, its superclass’s no-arg constructor is always invoked.
+
 False (if explicitly defined). A subclass's constructor explicitly invokes a superclass's constructor; if one does this, the superclass's no-arg constructor is not invoked.
 
 - Explain the difference between method overloading and method overriding.
+
 Method overloading defines methods of the same name in a class. Method overriding modifies the methods that are defined in the superclasses. Method overriding should have the same parameters, same method name, and should be covariant.
 
 - What is the benefit of using the @Override annotation?
+
 It forces the compiler to check the signature of the overridden method to ensure that the method is defined correctly.
