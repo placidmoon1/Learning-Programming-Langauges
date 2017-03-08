@@ -8,6 +8,7 @@
 4. [Lists of Exceptions](#lists-of-exceptions)
 5. [The SOLID Principle](#the-solid-principle)
 6. [Do subclasses inherit private fields?](#do-subclasses-inherit-private-fields)
+7. [.equals() method vs. ==](#equals-method-vs-)
 
 ### Single vs Double Operators
 
@@ -92,3 +93,6 @@ Based on this Quora Question [link](http://stackoverflow.com/questions/4716040/d
 Per [JLS](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.3.1.1) (Java Language Specification): Members of a class that are declared private **are not inherited** by subclasses of that class. Only members of a class that are declared protected or public are inherited by subclasses declared in a package other than the one in which the class is declared. However, the **objects** of the subclasses contain private fields (but they cannot be accessed unless through public getter methods and mutated unless through public setter methods). 
 
 ### .equals() method vs == 
+
+In the most simplest sense, .equals() method determines whether the two comparing objects are **logically same** and == operator compares the value of **two object references** to see whether they refer to the **same String instance**. The .equals() method can be overridden by the coder to allow objects to be compared by any trait they choose (ex. comparing people by their name instance variable).
+
