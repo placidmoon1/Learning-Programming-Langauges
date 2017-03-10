@@ -5,7 +5,7 @@
 1. [Single vs Double Operators](#single-vs-double-operators)
 2. [Breaking (with labels)](#breaking-with-labels)
 3. [Java types and default values](#java-types-and-default-values)
-4. [Lists of Exceptions and How to Handle Them](#lists-of-exceptions)
+4. [Lists of Exceptions (and How to Handle Them)](#lists-of-exceptions)
 5. [The SOLID Principle](#the-solid-principle)
 6. [Do subclasses inherit private fields?](#do-subclasses-inherit-private-fields)
 7. [.equals() method vs. ==](#equals-method-vs-)
