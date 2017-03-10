@@ -65,8 +65,23 @@ The compiler does not assign default values to local variables (i.e. variables d
  
 ### Lists of Exceptions 
 
-1. **NullPointerExcpetion**: Occurs when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
+1. **NullPointerExcpetion**: Throws when one invoke a method on a reference variable with a **null** value. To avoid such exception, make sure to assign an object reference to the variable before invoking the method throught the reference variable. 
+2. **IndexOutOfBoundsException**: Thrown to indicate that an index of some sort (such as to an array, to a string, or to a vector) is out of range. (Subtypes: *String*IndexOutOfBounds or *Array*IndexOutOfBounds Exception).
+3. **ArithmeticException**: Thrown when an unexpected/exceptional arithmetric condition has occurred (i.e. a variable divided by 0).
+4. **NumberFormatException**: Thrown when a non-parsable String or Object tries to be parsed into a type int, double or any numeric variable. 
+5. **ClassCastException**: Thrown when one tries to cast a superclass into its subclass. 
 
+How to handle excpetions? Use *try-catch* blocks or use the *throws* keword: 
+
+(syntax) 
+```java
+try { 
+//some code; if an exception occcurs in the code, goes to catch block.
+  catch (IndexOutOfBoundsException e) { //or any exceptions
+    System.err.println("ExceptionTypeName: " + e.getMessage()); //System.err is the standard error printstream.
+  }
+}
+```
 ### The SOLID Principle
 
 The SOLID design principles denotes the five fundamental principles that every object-oriented language based code should abide.
