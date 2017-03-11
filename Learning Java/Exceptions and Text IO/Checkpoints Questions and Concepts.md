@@ -49,3 +49,27 @@ catch (someType ex) {
  
 ### Exception Types 
 
+The throwable class (subclass of java.lang.Object) is the superclass for exceptions (can be handled by try-catch blocks) and errors (**can't** be handled by codes; **must** be fixed before code runs. The **run-time exception** is a subclass of exceptions and is an unchecked exception in compilation. 
+
+### More on Exception Handling 
+
+Exception-handling model of Java is based on three operations: declaring an exception, throwing an exception, and catching an exception. 
+
+```java 
+//EXAMPLE OF EXCEPTION HANDLING 
+
+method1() {
+  try {
+    invoke method2; 
+  }
+  catch (Exceptiontype ex) {
+    Process Exception; 
+  }
+}
+
+method2() throws Exception{ 
+  if (an error occurs) { 
+    throw new Exception();
+  }
+}
+
