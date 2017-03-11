@@ -72,6 +72,7 @@ The compiler does not assign default values to local variables (i.e. variables d
   2. For float and types, there are special values invoked when a number is divided by 0. 
 4. **NumberFormatException**: Thrown when a non-parsable String or Object tries to be parsed into a type int, double or any numeric variable. 
 5. **ClassCastException**: Thrown when one tries to cast a superclass into its subclass. 
+6. **InputMismatchException**: Thrown when the input of a method or constructor doesn't match the type of the parameter of such concepts.
 
 How to handle excpetions? Use *try-catch* blocks or use the *throws* keword: 
 
