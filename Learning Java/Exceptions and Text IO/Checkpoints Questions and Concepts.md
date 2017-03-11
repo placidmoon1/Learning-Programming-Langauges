@@ -1,8 +1,9 @@
-#Chapter 12: Exception Handling and Text I/O 
+# Chapter 12: Exception Handling and Text I/O 
 
 - *Runtime Errors* occur while a programing is running if the JVM detercts an operation that is impossible to carry out; these erros are thrown as exceptions. An *exception* is an object that represents an error or a condition that prevents execution from proceeding normally. If the exception is not handled, the program would terminate abnormally.
 - *Compile-time Errors*, also known as checked errors are errors that need to be fixed before the code is run. 
 
+### Exception Handling
 Excpetion-Handling can be done through if loops, methods, or others.
 
 i.e. to handle ArithmetricException one can do: 
@@ -36,3 +37,15 @@ try {
 catch (someType ex) { 
   Code to process when an exception of type someType is thrown 
 }
+```
+- What is the advantage of using exception handling? 
+
+ It enables a method to throw an exception to its caller. The caller can handle this exception. Without this capability, the called method itself must handle the exception or terminate the program. Often the called method does not know how to handle the exception. So it needs to pass the exception to its caller for handling.
+ 
+ - What would happen when a value is added to a max value of a numeric type?
+ 
+ No exceptions will be thrown; rather, it would result into a numeric overflow. Basically, it would wrap around the number and start as a negative. 
+ 
+ 
+### Exception Types 
+
