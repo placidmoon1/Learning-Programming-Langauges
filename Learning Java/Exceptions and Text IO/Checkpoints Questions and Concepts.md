@@ -1,6 +1,6 @@
 # Chapter 12: Exception Handling and Text I/O 
 
-- *Runtime Errors* occur while a programing is running if the JVM detercts an operation that is impossible to carry out; these erros are thrown as exceptions. An *exception* is an object that represents an error or a condition that prevents execution from proceeding normally. If the exception is not handled, the program would terminate abnormally.
+- *Runtime Errors* occur while a programing is running if the JVM detercts an operation that is impossible to carry out; these erros are thrown as exceptions. An *exception* is an event that represents an error or a condition that prevents execution from proceeding normally. If the exception is not handled, the program would terminate abnormally.
 - *Compile-time Errors*, also known as checked errors are errors that need to be fixed before the code is run. 
 
 ### Exception Handling
