@@ -72,4 +72,18 @@ method2() throws Exception{
     throw new Exception();
   }
 }
+```
 
+The *throws* keyword indicates that a method might throw an exception. It is defined in the header of the method. If it might throw multiple exceptions, separate them using commas. e.g. `public void myMethod() throws Exception1, Exception2, ..., ExceptionN`. The *throw* keyword is the keyword to throw an exception. 
+
+A program that detects an error can create **an instance** of an appropriate exception type and throw it. 
+For example, 
+
+```java
+IllegalArgumentException ex = 
+  new IllegalArgumentException("Wrong Argument"); 
+throw ex; 
+//////////////////////////////////////////////////
+//the shorter way 
+throw new IllegalArgumentException("Wrong Argument");  
+```
