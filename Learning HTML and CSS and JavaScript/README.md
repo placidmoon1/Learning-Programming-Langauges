@@ -1,1 +1,1 @@
-# Learning the HTML & CSS language
+# Learning HTML5, CSS3, JavaScript language
