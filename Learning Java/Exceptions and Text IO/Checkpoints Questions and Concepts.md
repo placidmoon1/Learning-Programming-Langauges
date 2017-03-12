@@ -87,3 +87,12 @@ throw ex;
 //the shorter way 
 throw new IllegalArgumentException("Wrong Argument");  
 ```
+If no exceptions arise in the try block, the catch block is skipped. If an exception arise in the try block, the execution of it is terminated and passed through the catch block, whcih is examined from first to last. If **no** handler for the exception in the catch block can be found, the program terminates and prints an error in console. 
+
+IMPORTANT: A compile error will result if a catch block for a superclass type appears before a catch block for a subclass type. This occurs because a **catch block is executed only once** and the program exits the reamining catch blocks and continue executing the following lines of code. Therefore, if the order is wrong, the subclass exception might be unreachable. For instance, if there are two exception that the method *throws* and exception1 is a superclass of exception2, if exception2 is thrown by the try block and the catch block of exception1 is in front of the catch block of exception2, the catch block of exception1 will be executed and the catch block for exception 2 won't be executed, which is bad. 
+
+One can write a single catch block that catches multiple exceptions by: 
+```java
+catch (Exception1 | Exception2 | ... | Exception ex) { 
+  //Some code for handling these exceptions
+}
