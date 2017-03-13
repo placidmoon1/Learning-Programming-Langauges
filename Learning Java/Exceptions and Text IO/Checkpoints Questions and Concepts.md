@@ -111,3 +111,9 @@ catch (Exception1 | Exception2 | ... | Exception ex) {
 
 A checked exception must be explicitly declared in the method declaration, if a method throws it. A checked exception must be caught in a try-catch block. An unchecked exception (RuntimeExceptions) does not need to be declared and does not need to be caught.
 
+### Making one's own exception
+
+One can make a new exception by extending the Exception class (for checked exceptions) or RuntimeException class (for unchecked exceptions). 
+
+```java
+public class MyException extends E
