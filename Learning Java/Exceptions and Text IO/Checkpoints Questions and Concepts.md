@@ -111,9 +111,36 @@ catch (Exception1 | Exception2 | ... | Exception ex) {
 
 A checked exception must be explicitly declared in the method declaration, if a method throws it. A checked exception must be caught in a try-catch block. An unchecked exception (RuntimeExceptions) does not need to be declared and does not need to be caught.
 
+The `finally` block/clause is always executed regardless whether an exception occurred or not. It is used to complement the try-catch block. There are three ways that a finally block can be used: 
+
+1. When there is no exception thrown in the try block, the catch block is skipped and the finally block is executed. 
+2. When there is an exception thrown in the try block and the catch block catches it, the catch block is executed, then the finally block is executed. 
+3. When there is an exception thrown in the try block but isn't caught in the catch block, the other statements in the try block is skipped, the catch block is skipped completely, the finally block is executed, and the exception is printed in console. 
+
+```java 
+try { 
+// something
+} 
+catch (SomeException ex){ 
+// something 
+}
+finally {
+// something 
+}
+```
+
 ### Making one's own exception
 
 One can make a new exception by extending the Exception class (for checked exceptions) or RuntimeException class (for unchecked exceptions). 
 
 ```java
-public class MyException extends E
+public class MyException extends Exception {
+  public MyException(String msg) {
+    super(msg); 
+  }
+}
+//////////////////////////////////////////////////
+if (checkproblem()) {
+  throw new MyException("Oops"); 
+}
+```
